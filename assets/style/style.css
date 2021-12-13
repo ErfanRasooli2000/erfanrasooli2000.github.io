@@ -273,7 +273,57 @@ body
 }
 
 /* Services */
+.bg-services
+{
+    background-color: rgba(234,234,234,0.9);
+}
 .services
 {
-    
+    padding: 100px 0;
+}
+.service-heading
+{
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 0 24px 0;
+    padding: 0;
+}
+.services-content
+{
+    padding: 0 20px;
+}
+.service
+{
+    margin: 28px 15px 0 15px;
+    padding: 56px 28px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.service i
+{
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    color: #164E71;
+    font-size: 22px;
+    border-radius: 50%;
+    border: 1px solid #164E71;
+}
+.content-title
+{
+    margin: 28px 0 18px 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+.content-text
+{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #595959;
 }
