@@ -36,7 +36,7 @@ body
 .main-image
 {
     height: 620px;
-    background-image: url("../images/a.JPG");
+    background-image: url("../images/a.jpg");
     background-size: cover;
     background-position: center;
     margin-top: 80px;
