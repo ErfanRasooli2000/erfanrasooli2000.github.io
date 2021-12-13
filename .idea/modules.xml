@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/erfanrasooli2000.github.io.iml" filepath="$PROJECT_DIR$/.idea/erfanrasooli2000.github.io.iml" />
+      <module fileurl="file://C:/xampp/htdocs/train/sodoku/.idea/sodoku.iml" filepath="C:/xampp/htdocs/train/sodoku/.idea/sodoku.iml" />
     </modules>
   </component>
 </project>

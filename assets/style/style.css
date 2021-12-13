@@ -1,3 +1,7 @@
+.bg-main
+{
+    background-color: #164E71;
+}
 h1
 {
     font-family: 'Fuzzy Bubbles', cursive;
@@ -41,7 +45,7 @@ body
 {
     font-size: 22px;
     font-weight: 600;
-    padding-bottom: 50px;
+    padding-bottom: 35px;
     color: whitesmoke;
 }
 .typer , .typer_cursor
@@ -52,7 +56,7 @@ body
 .main-image a
 {
     display: block;
-    margin-top: 65px;
+    margin-top: 50px;
     font-size: 15px;
     padding: 10px 22px;
     border: 1px solid white;
@@ -150,7 +154,43 @@ body
 .skills-header
 {
     position: absolute;
+    max-width: 750px;
     top: 100px;
+}
+@media all and (min-width: 768px) and (max-width: 991px)
+{
+    .skills-header
+    {
+        width: 750px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+@media all and (min-width: 992px) and (max-width: 1199px)
+{
+    .skills
+    {
+        height: 622px;
+    }
+    .skills-header
+    {
+        width: 485px;
+        padding: 0 15px;
+        margin-left: calc(100% - 485px);
+    }
+}
+@media all and (min-width: 1200px)
+{
+    .skills
+    {
+        height: 622px;
+    }
+    .skills-header
+    {
+        width: 585px;
+        padding: 0 15px;
+        margin-left: calc(100% - 585px);
+    }
 }
 .skills-header h6
 {
@@ -173,4 +213,67 @@ body
 .skills
 {
     background-color: #f9f9f9;
+}
+.skills p
+{
+    font-width: 500;
+    font-size: 15px;
+    margin-bottom: 28px;
+    color: #6E6E6E;
+}
+.progrees-aria
+{
+    padding: 81px 0;
+    margin: 16px 30px 0 30px;
+}
+.progress-bar , .progress
+{
+    height: 6px;
+}
+.progrees-aria span
+{
+    position: absolute;
+    display: inline-block;
+    line-height: 21px;
+    font-size: 10px;
+    color: white;
+    margin-top : -27px;
+    text-align: center;
+    width: 36px;
+    height: 22px;
+    padding: 0 8px;
+    background-color: #164E71;
+    border-radius: 30px;
+}
+.progrees-aria span:before
+{
+    position: absolute;
+    display: block;
+    content: "";
+    width: 8px;
+    height: 8px;
+    margin-left: 5px;
+    margin-top: 18px;
+    background-color: #164E71;
+    transform: rotate(45deg);
+}
+@media all and (max-width: 991px)
+{
+    .prog-20 { margin-left: calc(20% - 40px); }
+    .prog-60 { margin-left: calc(60% - 70px); }
+    .prog-80 { margin-left: calc(80% - 70px); }
+    .prog-90 { margin-left: calc(90% - 85px); }
+}
+@media all and (min-width: 991px)
+{
+    .prog-20 { margin-left: calc( 10% - 40px); }
+    .prog-60 { margin-left: calc( 30% - 70px); }
+    .prog-80 { margin-left: calc( 40% - 70px); }
+    .prog-90 { margin-left: calc( 45% - 85px); }
+}
+
+/* Services */
+.services
+{
+    
 }
