@@ -15,6 +15,22 @@ body
 {
     font-family: 'Raleway', sans-serif;
 }
+h4
+{
+    font-size: 36px;
+    color: #181818;
+    font-weight: 600;
+    margin-bottom: 24px;
+    text-align: center;
+}
+.margin-100
+{
+    margin: 100px 0;
+}
+.padding-100
+{
+    padding: 100px 0;
+}
 .header
 {
     position: fixed;
@@ -114,11 +130,6 @@ body
     color: #447C9F;
     background-color: #fff;
 }
-.about-me
-{
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
 .about-me-img img
 {
     width: 100%;
@@ -156,6 +167,11 @@ body
     position: absolute;
     max-width: 750px;
     top: 100px;
+}
+.skills-header h4
+{
+    text-align: left;
+    color: white;
 }
 @media all and (min-width: 768px) and (max-width: 991px)
 {
@@ -200,8 +216,6 @@ body
 .skills-header h4
 {
     margin: 30px 0 20px 0;
-    font-size: 36px;
-    font-weight: 600;
 }
 .skills-header a
 {
@@ -277,18 +291,6 @@ body
 {
     background-color: rgba(234,234,234,0.9);
 }
-.services
-{
-    padding: 100px 0;
-}
-.service-heading
-{
-    font-size: 36px;
-    font-weight: 600;
-    text-align: center;
-    margin: 0 0 24px 0;
-    padding: 0;
-}
 .services-content
 {
     padding: 0 20px;
@@ -327,17 +329,6 @@ body
     line-height: 24px;
     color: #595959;
 }
-.my-works
-{
-    padding: 100px 0;
-}
-.my-works h4
-{
-    font-size: 36px;
-    color: #181818;
-    font-weight: 600;
-    margin-bottom: 24px;
-}
 .my-works-list
 {
     margin-bottom: 28px;
@@ -355,12 +346,118 @@ body
     padding: 12px 14px;
     margin: 0 10px 8px 10px;
 }
+.my-works-list a:after
+{
+    box-shadow: 0px 0px 10px #9f9f9f;
+}
+.my-works-list a:hover
+{
+    color: #164E71;
+}
 .work-img
 {
     padding: 0 15px;
     margin: 20px 0;
 }
 .work-img img
+{
+    width: 100%;
+}
+.my-experiance
+{
+    padding: 100px 0;
+    background-image: url("../images/experience-bg.jpg");
+    background-position: center;
+}
+.experiance
+{
+    margin-top: 40px;
+    padding: 0 15px;
+}
+.experiance-item
+{
+    position: relative;
+}
+.experiance-content
+{
+    padding: 30px 40px;
+    background-color: #fff;
+}
+.experiance-content h6
+{
+    font-size: 20px;
+    color: #181818;
+    font-weight: 600;
+}
+.experiance-content-time
+{
+    font-size: 14px;
+    padding: 10px 0px;
+    color: #164E71;
+    font-weight: 600;
+}
+.experiance-content p
+{
+    text-align: justify;
+}
+@media all and (min-width: 992px)
+{
+    .experiance-circle-gray , .experiance-circle-blue
+    {
+        position: absolute;
+        top: 26px;
+        width: 18px;
+        height:18px;
+        border-radius: 50%;
+        border: 5px solid #818181;
+    }
+    .experiance-circle-gray { right: -27px; }
+    .experiance-circle-blue { left: -21px; }
+    .left-exp .experiance-content:after
+    {
+        position: absolute;
+        content: "";
+        border-style: solid;
+        border-width: 9px 0 9px 18px;
+        border-color: transparent transparent transparent #fff;
+        top: 40px;
+        right: 20px;
+    }
+    .right-exp .experiance-content:after
+    {
+        position: absolute;
+        content: "";
+        border-style: solid;
+        border-width: 9px 18px 9px 0;
+        border-color: transparent #ffffff transparent transparent;
+        top: 46px;
+        left: 20px;
+    }
+    .margin-right { margin-right: 38px; }
+    .margin-left { margin-left: 38px; }
+    .margin-top { margin-top: 140px; }
+    .left-exp { position: relative; }
+    .left-exp:after
+    {
+        content: "";
+        width: 4px;
+        position: absolute;
+        top: 44px;
+        bottom: -25px;
+        right: -5px;
+        background: none repeat scroll 0% 0% #ddd;
+    }
+}
+.clients
+{
+    margin: 80px 0;
+}
+.blog-post
+{
+    position: relative;
+    margin: 28px 15px 0 15px ;
+}
+.blog-post-img img
 {
     width: 100%;
 }
