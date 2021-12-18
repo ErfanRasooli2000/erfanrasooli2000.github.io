@@ -461,3 +461,55 @@ h4
 {
     width: 100%;
 }
+.blog-post-content
+{
+    position: relative;
+}
+.blog-post-header
+{
+    position: absolute;
+    top: -60px;
+    width: 100px;
+    height: 100px;
+    background-color: #164E71;
+}
+.blog-post-header h4 , .blog-post-header p
+{
+    text-align: center;
+}
+.blog-post-text
+{
+    color: #595959;
+    background-color: white;
+    padding: 70px 20px 70px 26px;
+}
+.blog-post-text p
+{
+    padding-bottom: 7px;
+}
+.blog-post-text h6
+{
+    font-size: 22px;
+    font-weight: 600;
+    padding-bottom: 9px;
+    color: #181818;
+}
+.blog-post-text i
+{
+    font-size: 25px;
+    padding-right: 10px;
+}
+.blog-post-admin-name p
+{
+    line-height: 37px;
+}
+.blog-post-text a
+{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 22px;
+    text-decoration: none;
+    color: #164E71;
+    border: 1px solid #164E71;
+    font-weight: 500;
+}
