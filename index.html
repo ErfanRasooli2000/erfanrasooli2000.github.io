@@ -25,26 +25,27 @@
                     </div>
                     <div class="navigation h-100">
                         <ul class="list-unstyled d-none d-lg-flex h-100 m-0">
-                            <li><a href="#home_id" target="_self">Home</a></li>
-                            <li><a href="#about_id" target="_self">About</a></li>
-                            <li><a href="#service_id">Services</a></li>
-                            <li><a href="#">Work</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="#home" target="_self">Home</a></li>
+                            <li><a href="#about" target="_self">About</a></li>
+                            <li><a href="#service">Services</a></li>
+                            <li><a href="#work">Work</a></li>
+                            <li><a href="#contact">Contact</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="home_id" class="d-lg-none">
+        <div  id="home"></div>
+        <div class="d-lg-none">
             <ul id="nav-slider" class="list-unstyled d-flex flex-column d-lg-none navigation-slider-close">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
-        <div id="aboutd_id" class="container-fluid m-0 p-0 w-100">
+        <div class="container-fluid m-0 p-0 w-100">
             <div class="row m-0">
                 <div class="col-12 main-image text-white p-0 d-flex flex-column justify-content-center align-items-center">
                     <h6 class="m-0">I Am Erfan Rasooli</h6>
@@ -53,22 +54,22 @@
                 </div>
             </div>
         </div>
-        <div id="about_id" class="container about-me margin-100">
+        <div id="about" class="container about-me margin-100">
             <div class="row">
                 <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2 col-xl-5 offset-xl-1 about-me-img">
                     <img src="assets/images/b.jpg">
-                </div>
-                <div class="col-12 col-xl-5 about-me-content">
-                    <h3 class="fs-1 fw-bold mb-4 text-black">ABOUT ME</h3>
-                    <p class="text-black pt-2">I am Erfan Rasooli. and I am a Web Developer.
-                    I am Still Learning About Web Developing For Back-end With PHP And Mysql With and Without Laravel Framework
-                    For Front-end This is my Web 2 Course Final Project With Html And Css With Bootstrap Framework
-                    and Iam Going To Start Learning Java Script In Web 3 Course.
-                    My Goal From Learning Web Developing Is To Become a Full Stack Developer and I am Trying Every day To Achive This Goal.
-                    In This Page You Can Check Out My Last Jobs.</p>
-                    <a href="#" class="text-decoration-none text-white d-inline-block">Download My Cv</a>
-                </div>
-            </div>
+        </div>
+        <div class="col-12 col-xl-5 about-me-content">
+            <h3 class="fs-1 fw-bold mb-4 text-black">ABOUT ME</h3>
+            <p class="text-black pt-2">I am Erfan Rasooli. and I am a Web Developer.
+                I am Still Learning About Web Developing For Back-end With PHP And Mysql With and Without Laravel Framework
+                For Front-end This is my Web 2 Course Final Project With Html And Css With Bootstrap Framework
+                and Iam Going To Start Learning Java Script In Web 3 Course.
+                My Goal From Learning Web Developing Is To Become a Full Stack Developer and I am Trying Every day To Achive This Goal.
+                In This Page You Can Check Out My Last Jobs.</p>
+            <a href="#" class="text-decoration-none text-white d-inline-block">Download My Cv</a>
+        </div>
+        </div>
         </div>
         <div class="container-fluid">
             <div class="row">
@@ -107,7 +108,7 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid bg-services m-0 p-0 margin-100">
+        <div id="service" class="container-fluid bg-services m-0 p-0 margin-100">
             <div class="container">
                 <div class="row services padding-100">
                     <div class="col-12">
@@ -137,42 +138,42 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div id="work" class="container">
             <div class="row my-works margin-100">
                 <div class="col-12">
                     <h4 class="text-uppercase text-center">My Works</h4>
                 </div>
                 <div class="col-12">
                     <ul class="d-flex flex-row justify-content-center align-items-center flex-wrap my-works-list m-0 p-0">
-                        <li><a href="#">ALL</a></li>
-                        <li><a href="#">DESIGN</a></li>
-                        <li><a href="#">DEVELOPMENT</a></li>
-                        <li><a href="#">PLUGIN</a></li>
-                        <li><a href="#">PHOTOGRAPHY</a></li>
+                        <li target="_top" id="all" onclick="showAllImges('all')">ALL</li>
+                        <li target="_top" id="design" onclick="showAllImges('design')">DESIGN</li>
+                        <li target="_top" id="deve" onclick="showAllImges('deve')">DEVELOPMENT</li>
+                        <li target="_top" id="plugin" onclick="showAllImges('plugin')">PLUGIN</li>
+                        <li target="_top" id="photo" onclick="showAllImges('photo')">PHOTOGRAPHY</li>
                     </ul>
                 </div>
-                <div class="col-12 col-md-4 col-lg-3 work-img">
+                <div class="col-12 col-md-4 col-lg-3 work-img design">
                     <img src="assets/images/img2.jpg">
                 </div>
-                <div class="col-12 col-md-4 col-lg-3 work-img">
+                <div class="col-12 col-md-4 col-lg-3 work-img plugin">
                     <img src="assets/images/img1.jpg">
                 </div>
-                <div class="col-12 col-md-4 col-lg-3 work-img">
+                <div class="col-12 col-md-4 col-lg-3 work-img design">
                     <img src="assets/images/img3.jpg">
                 </div>
-                <div class="col-12 col-md-4 col-lg-3 work-img">
+                <div class="col-12 col-md-4 col-lg-3 work-img photo">
                     <img src="assets/images/img4.jpg">
                 </div>
-                <div class="col-12 col-md-4 col-lg-3 work-img">
+                <div class="col-12 col-md-4 col-lg-3 work-img photo">
                     <img src="assets/images/img5.jpg">
                 </div>
-                <div class="col-12 col-md-4 col-lg-3 work-img">
+                <div class="col-12 col-md-4 col-lg-3 work-img deve">
                     <img src="assets/images/img6.jpg">
                 </div>
-                <div class="col-12 col-md-4 col-lg-3 work-img">
+                <div class="col-12 col-md-4 col-lg-3 work-img design">
                     <img src="assets/images/img7.jpg">
                 </div>
-                <div class="col-12 col-md-4 col-lg-3 work-img">
+                <div class="col-12 col-md-4 col-lg-3 work-img deve">
                     <img src="assets/images/img8.jpg">
                 </div>
             </div>
@@ -347,7 +348,7 @@
                 </div>
             </div>
         </div>
-        <div class="footer">
+        <div id="contact" class="footer">
             <h4>GET IN TOUCH</h4>
             <div class="container p-15">
                 <div class="row">
