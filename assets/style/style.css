@@ -23,6 +23,10 @@ h4
     margin-bottom: 24px;
     text-align: center;
 }
+.p-15
+{
+    padding: 0 15px 0 15px;
+}
 .margin-100
 {
     margin: 100px 0;
@@ -512,4 +516,87 @@ h4
     color: #164E71;
     border: 1px solid #164E71;
     font-weight: 500;
+}
+.footer
+{
+    width: 100%;
+    margin: 0;
+    bottom: 0;
+    padding: 100px 0;
+    background-image: url("../images/contact.jpg");
+    background-position: center;
+}
+.footer h4
+{
+    margin-bottom: 52px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+    color: #efefef;
+}
+.logo-contact
+{
+    width: 60px;
+    height: 60px;
+    background-color: #f0efef;
+    border-radius: 50%;
+}
+.logo-contact i
+{
+    color: #164E71;
+    font-size: 2rem;
+}
+.contact-text
+{
+    margin: 28px 0 56px 0;
+    font-size: 15px;
+    color: white;
+}
+.form input
+{
+    width: 100%;
+    height: 50px;
+    border: 1px solid #E4E4E4;
+    margin: 20px 0 0 0;
+    padding: 0 0 0 14px;
+}
+.message-text
+{
+    width: 100%;
+    height: 160px;
+    border: 1px solid #E4E4E4;
+    margin: 20px 0 0 0;
+    padding: 10px 0 0 14px;
+}
+.submit-msg
+{
+    width: 125px !important;
+    background-color: transparent;
+    color: white;
+    border: 1px solid #E4E4E4;
+    padding: 10px !important;
+    margin: 42px auto 0 !important;
+
+}
+.down-footer
+{
+    padding: 35px 0;
+    background-color: #333;
+    color: #ddd;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 400;
+}
+@media all and (max-width: 767px) {
+    .form
+    {
+        padding: 0 15px 0 15px;
+    }
+}
+@media all and (min-width: 768px)
+{
+    .form
+    {
+        padding: 0 50px 0 50px;
+    }
 }
