@@ -318,8 +318,13 @@ h4
     border-radius: 50%;
     border: 1px solid #164E71;
 }
+.service i
+{
+    transition: 300ms all ease-in-out;
+}
 .service:hover
 {
+    transition: 300ms all ease-in-out;
     box-shadow: 0 0 15px darkgray;
 }
 .service:hover >  i{
