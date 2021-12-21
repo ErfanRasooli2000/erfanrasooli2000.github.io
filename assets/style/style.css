@@ -141,6 +141,11 @@ h4
     color: #447C9F;
     background-color: #fff;
 }
+.about-me-img
+{
+    display: flex;
+    justify-content: center;
+}
 .about-me-img img
 {
     width: 100%;
