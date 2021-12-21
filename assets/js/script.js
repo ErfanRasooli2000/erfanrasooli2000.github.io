@@ -26,16 +26,42 @@ function showAllImges(name)
 
     let size_all = all.length;
     let size_chosen = chosen.length;
+
     for (let i=0 ; i < size_all ; i++)
     {
-        all[i].style.display='none';
-    }
-    for (let i=0 ; i < size_chosen ; i++)
-    {
-        console.log('g');
-        chosen[i].style.display='inline-block';
+            if(all[i].style.display!='none')
+            {
+                all[i].style.transform='scale(0)';
+            }
     }
 
+    setTimeout( () => noner() , 400);
+    function noner()
+    {
+        for (let i=0 ; i < size_all ; i++)
+        {
+            if(all[i].style.display!='none')
+            {
+                all[i].style.display='none';
+            }
+        }
+    }
+    setTimeout( () => liner() , 400);
+    function liner()
+    {
+        for (let i=0 ; i < size_chosen ; i++)
+        {
+            chosen[i].style.display='inline-block';
+        }
+    }
+    setTimeout( () => liners() , 500);
+    function liners()
+    {
+        for (let i=0 ; i < size_chosen ; i++)
+        {
+            chosen[i].style.transform='scale(1)';
+        }
+    }
     document.getElementById('deve').classList.remove('shadow');
     document.getElementById('photo').classList.remove('shadow');
     document.getElementById('plugin').classList.remove('shadow');
