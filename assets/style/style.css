@@ -152,6 +152,14 @@ h4
     margin-bottom: 30px;
     object-fit: contain;
 }
+@media all and (min-width: 1200px) {
+    .about-me-img img
+    {
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
 .about-me-content p
 {
     line-height: 26px;
