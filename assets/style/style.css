@@ -38,7 +38,6 @@ h4
 }
 .header
 {
-    position: fixed;
     z-index: 200;
 }
 .header-logo
@@ -47,7 +46,6 @@ h4
 }
 .menu-bar
 {
-    position: fixed;
     height: 2.5rem;
     width: 2.5rem;
     font-size: 1.8rem;
