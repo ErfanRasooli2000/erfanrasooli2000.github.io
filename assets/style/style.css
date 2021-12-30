@@ -73,6 +73,17 @@ h4
     font-size: 60px;
     text-align: center;
 }
+.typer_cursor
+{
+    font-size: 70px;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 1);
+    transition: all linear;
+}
+.typer
+{
+    transition: 20ms all ease-in-out;
+}
 .main-image a
 {
     display: block;

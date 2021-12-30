@@ -144,7 +144,6 @@ function backcolor(main)
     document.getElementById('secound100').style.color='rgb(134, 151, 145)';
     document.getElementById('third100').style.color='rgb(134, 151, 145)';
     document.getElementById(main).style.color='rgb(89 , 89 , 89)';
-    console.log(main);
 }
 
 setInterval(slide,5000);
@@ -175,5 +174,113 @@ function slide()
             {
                 first100();
             }
+    }
+}
+let typer_text_one = "I'm Erfan .";
+let typer_text_two = "I am Developer.";
+let cleaner_text;
+let clean_which;
+let cleanerInter;
+let saver = 0;
+let sit = 1;
+// 0 lets delete
+// 1 text one
+// 2 text two
+let cursor_pos = 1;
+let cursor_inter = setInterval(cursor,150);
+let all_interval = setInterval(typer_sit,450);
+
+function cursor()
+{
+    if(cursor_pos==1)
+    {
+        document.getElementById('typer_cursor').style.color='rgba(255, 255, 255, 1)';
+        cursor_pos=2;
+    }
+    else
+    {
+        cursor_pos=1;
+        document.getElementById('typer_cursor').style.color='rgba(255, 255, 255, 0.7)';
+    }
+}
+
+function typer_sit()
+{
+    switch(sit)
+    {
+        case 1:
+            text_one_typer();
+            break;
+        case 2:
+            text_two_typer();
+            break;
+        case 0:
+            cleaner();
+            clearInterval(all_interval);
+            cleanerInter = setInterval(cleaner,150);
+            break;
+    }
+}
+function text_one_typer()
+{
+    if(typer_text_one[saver]!=undefined)
+    {
+        if(typer_text_one[saver]==' ')
+        {
+            document.getElementById('typer_holder').innerText =
+                document.getElementById('typer_holder').innerText + typer_text_one[saver]
+                + typer_text_one[saver+1];
+            saver = saver + 2;
+        }
+        else
+        {
+            document.getElementById('typer_holder').innerText =
+                document.getElementById('typer_holder').innerText + typer_text_one[saver];
+            saver++;
+        }
+    }
+    else
+    {
+        sit = 0;
+        clean_which = 2;
+        cleaner_text = document.getElementById('typer_holder').innerText;
+    }
+}
+function text_two_typer()
+{
+    if(typer_text_two[saver]!=undefined)
+    {
+        if(typer_text_two[saver]==' ')
+        {
+            document.getElementById('typer_holder').innerText =
+                document.getElementById('typer_holder').innerText + typer_text_two[saver]
+                + typer_text_two[saver+1];
+            saver = saver + 2;
+        }
+        else
+        {
+            document.getElementById('typer_holder').innerText =
+                document.getElementById('typer_holder').innerText + typer_text_two[saver];
+            saver++;
+        }
+    }
+    else
+    {
+        sit = 0;
+        clean_which = 1;
+        cleaner_text = document.getElementById('typer_holder').innerText;
+    }
+}
+function cleaner()
+{
+    cleaner_text = cleaner_text.substring(0,saver);
+    document.getElementById('typer_holder').innerText = cleaner_text;
+    saver--;
+    if (saver==-1)
+    {
+        saver=0;
+        sit=clean_which;
+        clearInterval(cleanerInter);
+        all_interval = setInterval(typer_sit,450)
     }
 }
