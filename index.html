@@ -10,7 +10,8 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
         <link rel="stylesheet" href="assets/style/style.css">
-        <title>Document</title>
+        <link rel="icon" type="image/x-icon" href="assets/images/icon.png">
+        <title>Erfan Rasooli</title>
     </head>
     <body>
         <div class="container-fluid px-4 px-md-5 bg-white position-fixed shadow header">
@@ -57,10 +58,21 @@
         <div class="container about-me margin-100">
             <div class="row">
                 <div class="col-12 col-md-9 offset-md-1 col-lg-6 offset-lg-0 col-xl-6 about-me-img">
-                    <img src="assets/images/b.jpg">
+                    <div class="about-me-img-holder">
+                        <div class="social_media_overlay"></div>
+                        <div class="social_media d-flex justify-content-evenly align-items-center">
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="#"><i class="bi bi-whatsapp"></i></a>
+                            <a href="#"><i class="bi bi-twitter"></i></a>
+                            <a href="#"><i class="bi bi-youtube"></i></a>
+                            <a href="#"><i class="bi bi-github"></i></a>
+                        </div>
+                        <img src="assets/images/b.jpg">
+                    </div>
                 </div>
                 <div class="col-12 col-lg-6 about-me-content">
-                    <h3 class="fs-1 fw-bold mb-4 text-black">ABOUT ME</h3>
+                    <h3 class="fs-1 fw-bold my-4 text-black">ABOUT ME</h3>
                     <p class="text-black pt-2">I am Erfan Rasooli. and I am a Web Developer.
                         I am Still Learning About Web Developing For Back-end With PHP And Mysql With and Without Laravel Framework
                         For Front-end This is my Web 2 Course Final Project With Html And Css With Bootstrap Framework
@@ -140,7 +152,7 @@
             </div>
         </div>
         <span id="work" ></span>
-        <div class="container">
+        <div class="container px-80">
             <div class="row my-works margin-100">
                 <div class="col-12">
                     <h4 class="text-uppercase text-center">My Works</h4>
@@ -317,46 +329,63 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid">
-            <div class="row clients">
-                <div class="col-12">
-                    <h4 class="text-uppercase">what our clients say</h4>
+        <div class="clients">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <h4 class="text-uppercase">what our clients say</h4>
+                    </div>
                 </div>
-                <div class="col-12 col-lg-4 client-text d-flex flex-column justify-content-center align-items-center">
+            </div>
+            <div class="clients-all d-flex justify-content-start justify-content-lg-evenly align-items-center">
+                <div class="client-item d-flex flex-column justify-content-center align-items-center">
                     <div class="client-image">
                         <img src="assets/images/profile-1.jpg">
                     </div>
-                        <div class="client-information">
-                            <p class="client-name">Mamad Ali</p>
-                            <p class="client-job">Web Developer</p>
-                        </div>
-                        <p class="clinet-talk"><span><i class="bi bi-quote"></i></span>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto cum debitis eius exercitationem explicabo illum odit repellendus tenetur voluptatem. Error exercitationem iure libero obcaecati recusandae tenetur ullam ut voluptas.
-                            <span><i class="bi bi-quote"></i></span></p>
+                    <div class="client-information">
+                        <p class="client-name">Mamad Ali</p>
+                        <p class="client-job">Web Developer</p>
+                    </div>
+                    <p class="clinet-talk"><span><i class="bi bi-quote"></i></span>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto cum debitis eius exercitationem explicabo illum odit repellendus tenetur voluptatem. Error exercitationem iure libero obcaecati recusandae tenetur ullam ut voluptas.
+                        <span><i class="bi bi-quote"></i></span></p>
                 </div>
-                <div class="col-12 col-lg-4 client-text d-flex flex-column justify-content-center align-items-center">
+                <div class="client-item d-flex flex-column justify-content-center align-items-center">
                     <div class="client-image">
                         <img src="assets/images/profile-2.jpg">
                     </div>
-                        <div class="client-information">
-                            <p class="client-name">Mamad Ali</p>
-                            <p class="client-job">Web Developer</p>
-                        </div>
-                        <p class="clinet-talk"><span><i class="bi bi-quote"></i></span>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto cum debitis eius exercitationem explicabo illum odit repellendus tenetur voluptatem. Error exercitationem iure libero obcaecati recusandae tenetur ullam ut voluptas.
-                            <span><i class="bi bi-quote"></i></span></p>
+                    <div class="client-information">
+                        <p class="client-name">Ali Reza</p>
+                        <p class="client-job">Web Developer</p>
+                    </div>
+                    <p class="clinet-talk"><span><i class="bi bi-quote"></i></span>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto cum debitis eius exercitationem explicabo illum odit repellendus tenetur voluptatem. Error exercitationem iure libero obcaecati recusandae tenetur ullam ut voluptas.
+                        <span><i class="bi bi-quote"></i></span></p>
                 </div>
-                <div class="col-12 col-lg-4 client-text d-flex flex-column justify-content-center align-items-center">
+                <div class="client-item d-flex flex-column justify-content-center align-items-center">
                     <div class="client-image">
                         <img src="assets/images/profile-3.jpg">
                     </div>
-                        <div class="client-information">
-                            <p class="client-name">Mamad Ali</p>
-                            <p class="client-job">Web Developer</p>
-                        </div>
-                        <p class="clinet-talk"><span><i class="bi bi-quote"></i></span>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto cum debitis eius exercitationem explicabo illum odit repellendus tenetur voluptatem. Error exercitationem iure libero obcaecati recusandae tenetur ullam ut voluptas.
-                            <span><i class="bi bi-quote"></i></span></p>
+                    <div class="client-information">
+                        <p class="client-name">Mamad Ali</p>
+                        <p class="client-job">Web Developer</p>
+                    </div>
+                    <p class="clinet-talk"><span><i class="bi bi-quote"></i></span>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto cum debitis eius exercitationem explicabo illum odit repellendus tenetur voluptatem. Error exercitationem iure libero obcaecati recusandae tenetur ullam ut voluptas.
+                        <span><i class="bi bi-quote"></i></span></p>
+                </div>
+            </div>
+            <div class="container mt-3 slider-client">
+                <div class="row">
+                    <div class="col-12 d-flex d-lg-none justify-content-center align-items-center">
+                        <i class="p-1 bi bi-square-fill"></i>
+                        <i class="p-1 bi bi-square-fill"></i>
+                        <i class="p-1 bi bi-square-fill"></i>
+                    </div>
+                    <div class="col-12 d-none d-lg-flex justify-content-center align-items-center">
+                        <i class="p-1 bi bi-square-fill"></i>
+                        <i class="p-1 bi bi-square-fill"></i>
+                    </div>
                 </div>
             </div>
         </div>
@@ -443,7 +472,7 @@
             <h4>GET IN TOUCH</h4>
             <div class="container p-15">
                 <div class="row">
-                    <div class="col-12 col-lg-4 d-flex flex-column justify-content-center align-items-center">
+                    <div class="col-12 col-lg-2 offset-lg-3 d-flex flex-column justify-content-center align-items-center">
                         <div class="logo-contact d-flex justify-content-center align-items-center">
                             <i class="bi bi-house-door"></i>
                         </div>
@@ -452,7 +481,7 @@
                             <p class="m-0">Iran , Tehran</p>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-4 d-flex flex-column justify-content-center align-items-center">
+                    <div class="col-12 col-lg-2 d-flex flex-column justify-content-center align-items-center">
                         <div class="logo-contact d-flex justify-content-center align-items-center">
                             <i class="bi bi-phone"></i>
                         </div>
@@ -461,7 +490,7 @@
                             <p class="m-0 text-center"><span class="fw-bold">Home : </span>021 - 55343***</p>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-4 d-flex flex-column justify-content-center align-items-center">
+                    <div class="col-12 col-lg-2 d-flex flex-column justify-content-center align-items-center">
                         <div class="logo-contact d-flex justify-content-center align-items-center">
                             <i class="bi bi-envelope-fill"></i>
                         </div>
@@ -481,7 +510,7 @@
                         </div>
                         <div class="col-12 col-lg-8 offset-lg-2 d-flex flex-column justify-content-center align-items-center p-15">
                             <textarea name="message-text" class="message-text" placeholder="Type Here"></textarea>
-                            <input class="submit-msg" type="submit" name="submit" value="submit">
+                            <input class="submit-msg" type="submit" name="submit" value="Submit">
                         </div>
                     </div>
                 </form>

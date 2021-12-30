@@ -139,24 +139,89 @@ h4
     color: #447C9F;
     background-color: #fff;
 }
+
 .about-me-img
 {
+    position: relative;
     display: flex;
     justify-content: center;
 }
-.about-me-img img
+@media all and (max-width: 1199px)
 {
-    width: 100%;
-    margin-bottom: 30px;
-    object-fit: contain;
-}
-@media all and (min-width: 1200px) {
-    .about-me-img img
+    .about-me-img-holder
     {
+        width: 100%;
+        position: relative;
+    }
+}
+@media all and (min-width: 1200px)
+{
+    .px-80
+    {
+        padding: 0 80px;
+    }
+    .about-me-img-holder
+    {
+        position: relative;
         width: 70%;
         margin-left: 15%;
         margin-right: 15%;
     }
+}
+.about-me-img-holder img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin-bottom: 30px;
+}
+.social_media
+{
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    background-color: rgba(24, 24, 24, 0.8);
+    margin: 0; padding: 0;
+    z-index: 1;
+    bottom: -100px;
+    transition: 200ms all linear;
+}
+
+@media all and (max-width: 1199px)
+{
+    .about-me-img-holder:hover > .social_media
+    {
+        bottom: 35px;
+    }
+}
+@media all and (min-width: 1200px)
+{
+    .about-me-img-holder:hover > .social_media
+    {
+        bottom: 30px;
+    }
+}
+.social_media a{
+    text-decoration: none;
+    color: white;
+}
+.social_media i
+{
+    font-size: calc(25px + 1vw);
+    color: white;
+}
+.social_media_overlay
+{
+    position: absolute;
+    bottom: -100px;
+    z-index: 5;
+    width: 100%;
+    height: 25%;
+    background-color: white;
+}
+.about-me-content
+{
+    z-index: 10;
 }
 .about-me-content p
 {
@@ -197,6 +262,10 @@ h4
 }
 @media all and (min-width: 768px) and (max-width: 991px)
 {
+    .service
+    {
+        height: 420px;
+    }
     .skills-header
     {
         width: 750px;
@@ -264,6 +333,23 @@ h4
     padding: 81px 0;
     margin: 16px 30px 0 30px;
 }
+
+@media all and (max-width: 1199px)
+{
+    .progrees-aria
+    {
+        margin: 16px 30px 0 30px;
+    }
+}
+
+@media all and (min-width: 1200px)
+{
+    .progrees-aria
+    {
+        margin: 16px auto 0 auto;
+    }
+}
+
 .progress-bar , .progress
 {
     height: 6px;
@@ -390,7 +476,7 @@ h4
 }
 .work-img img
 {
-    transition: 500ms all ease-in-out;
+    transition: 400ms all ease-in-out;
     width: 100%;
     object-fit: cover;
 }
@@ -406,7 +492,7 @@ h4
     z-index:2;
     background-color: rgba(242,242,242,0.9);
     transform: scale(0);
-    transition: 200ms all ease-in-out;
+    transition: 400ms all ease-in-out;
 }
 .work-img-overley p
 {
@@ -530,7 +616,125 @@ h4
 }
 .clients
 {
+    overflow: hidden;
     margin: 80px 0;
+}
+.client-item
+{
+    border: 1px solid #e1e1e1;
+    position: relative;
+}
+.clients-all
+{
+    position: relative;
+    overflow: hidden;
+    width: 300vw;
+    margin-left: -200vw;
+}
+@media all and (max-width: 767px)
+{
+    .clients-all
+    {
+        width: 300vw;
+    }
+    .client-item
+    {
+        max-width: 768px;
+        margin: 75px 10px 10px 10px;
+    }
+}
+@media all and (min-width: 768px) and (max-width: 991px)
+{
+    .clients-all
+    {
+        width: 300vw;
+    }
+    .client-item
+    {
+        max-width: 768px;
+        margin: 75px auto 10px auto;
+    }
+}
+@media all and (min-width: 992px)
+{
+    .clients-all
+    {
+        width: 150vw;
+    }
+    .client-item
+    {
+        max-width: 560px;
+        margin: 75px 10px 10px 10px;
+    }
+}
+.client-image
+{
+    position: absolute;
+    width: 125px;
+    height: 125px;
+    top: -75px;
+    z-index: 20;
+    border: 4px solid #e1e1e1;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.client-information
+{
+    margin-top: 85px;
+}
+.client-information p
+{
+    text-align: center;
+}
+.client-image img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: contain;
+}
+.client-text
+{
+    border: 1px solid lightgray;
+    position: relative;
+    padding: 83px 0 30px 0;
+    margin: 80px 0 10px 0;
+}
+.client-text
+{
+    text-align: center;
+}
+.client-name
+{
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    padding-bottom: 7px;
+    margin: 0;
+}
+.client-job
+{
+    font-style: italic;
+    color: #164E71;
+    font-weight: 600;
+    font-size: 14px;
+}
+.clinet-talk
+{
+    width: 70%;
+    margin: 0 auto;
+    color: #878787;
+    padding: 14px 0;
+    font-size: 15px;
+    text-align: center;
+}
+.slider-client i
+{
+    color: rgb(134, 151, 145);
+    /* color : rgb(89,89,89); */
+    font-size: 12px;
 }
 .blog-post
 {
@@ -656,10 +860,15 @@ h4
     width: 125px !important;
     background-color: transparent;
     color: white;
+    font-weight: 600;
     border: 1px solid #E4E4E4;
     padding: 10px !important;
     margin: 42px auto 0 !important;
-
+}
+.submit-msg:hover
+{
+    background-color: white;
+    color: #164E71;
 }
 .down-footer
 {
@@ -683,60 +892,6 @@ h4
         padding: 0 50px 0 50px;
     }
 }
-.client-image
-{
-    position: absolute;
-    width: 125px;
-    height: 125px;
-    top: -80px;
-    border: 4px solid #e1e1e1;
-    display: flex;
-    border-radius: 50%;
-    justify-content: center;
-    align-items: center;
-}
-.client-image img
-{
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    object-fit: contain;
-}
-.client-text
-{
-    border: 1px solid lightgray;
-    position: relative;
-    padding: 83px 0 30px 0;
-    margin: 80px 0 10px 0;
-}
-.client-text
-{
-    text-align: center;
-}
-.client-name
-{
-    font-size: 18px;
-    font-weight: 700;
-    color: #333;
-    padding-bottom: 7px;
-    margin: 0;
-}
-.client-job
-{
-    font-style: italic;
-    color: #164E71;
-    font-weight: 600;
-    font-size: 14px;
-}
-.clinet-talk
-{
-    width: 70%;
-    margin: 0 auto;
-    color: #878787;
-    padding: 14px 0;
-    font-size: 15px;
-    text-align: center;
-}
 .send-up
 {
     border-radius: 4px;
@@ -752,4 +907,10 @@ h4
     display: inline-block;
     color: white;
     padding: 8px 12px;
+}
+@media all and (min-width: 992px) {
+    .service
+    {
+        height: 328px;
+    }
 }
