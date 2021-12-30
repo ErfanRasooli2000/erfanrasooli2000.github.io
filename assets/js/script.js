@@ -203,7 +203,6 @@ function cursor()
         document.getElementById('typer_cursor').style.color='rgba(255, 255, 255, 0.7)';
     }
 }
-
 function typer_sit()
 {
     switch(sit)
