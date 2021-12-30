@@ -70,7 +70,7 @@ h4
 }
 .typer , .typer_cursor
 {
-    font-size: 60px;
+    font-size: calc(2vw + 40px);
     text-align: center;
 }
 .typer_cursor
