@@ -629,13 +629,15 @@ h4
     position: relative;
     overflow: hidden;
     width: 300vw;
-    margin-left: -200vw;
+
+    transition: 500ms all ease-in;
 }
 @media all and (max-width: 767px)
 {
     .clients-all
     {
         width: 300vw;
+        margin-left: 0;
     }
     .client-item
     {
@@ -648,6 +650,7 @@ h4
     .clients-all
     {
         width: 300vw;
+        margin-left: 0;
     }
     .client-item
     {
@@ -660,6 +663,7 @@ h4
     .clients-all
     {
         width: 150vw;
+        margin-left: 0;
     }
     .client-item
     {
@@ -730,11 +734,13 @@ h4
     font-size: 15px;
     text-align: center;
 }
-.slider-client i
+.slider-client a
 {
     color: rgb(134, 151, 145);
-    /* color : rgb(89,89,89); */
+    text-decoration: none;
+    cursor: pointer;
     font-size: 12px;
+    transition: 150ms all ease-in;
 }
 .blog-post
 {

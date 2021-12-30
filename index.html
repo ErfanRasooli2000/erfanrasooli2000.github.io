@@ -21,7 +21,7 @@
                 </div>
                 <div class="col-2 col-lg-8 col-xl-7 d-flex justify-content-end align-items-center p-0">
                     <div class="d-flex d-lg-none justify-content-center align-items-center position-fixed menu-bar">
-                        <a href="#" onclick="openNavs()" class="text-decoration-none text-black"><i class="bi bi-list"></i></a>
+                        <a onclick="openNavs()" class="text-decoration-none text-black"><i class="bi bi-list"></i></a>
                     </div>
                     <div class="navigation h-100">
                         <ul class="list-unstyled d-none d-lg-flex h-100 m-0">
@@ -337,7 +337,7 @@
                     </div>
                 </div>
             </div>
-            <div class="clients-all d-flex justify-content-start justify-content-lg-evenly align-items-center">
+            <div id="client_slider" class="clients-all d-flex justify-content-start justify-content-lg-evenly align-items-center">
                 <div class="client-item d-flex flex-column justify-content-center align-items-center">
                     <div class="client-image">
                         <img src="assets/images/profile-1.jpg">
@@ -378,13 +378,13 @@
             <div class="container mt-3 slider-client">
                 <div class="row">
                     <div class="col-12 d-flex d-lg-none justify-content-center align-items-center">
-                        <i class="p-1 bi bi-square-fill"></i>
-                        <i class="p-1 bi bi-square-fill"></i>
-                        <i class="p-1 bi bi-square-fill"></i>
+                        <a id="first100" class="m-1" onclick="first100()"><i class="bi bi-square-fill"></i></a>
+                        <a id="secound100" class="m-1" onclick="secound100()"><i class="bi bi-square-fill"></i></a>
+                        <a id="third100" class="m-1" onclick="third100()"><i class="bi bi-square-fill"></i></a>
                     </div>
                     <div class="col-12 d-none d-lg-flex justify-content-center align-items-center">
-                        <i class="p-1 bi bi-square-fill"></i>
-                        <i class="p-1 bi bi-square-fill"></i>
+                        <a id="first50" class="m-1" onclick="first50()"><i class="bi bi-square-fill"></i></a>
+                        <a id="secound50" class="m-1" onclick="secound50()"><i class="bi bi-square-fill"></i></a>
                     </div>
                 </div>
             </div>
