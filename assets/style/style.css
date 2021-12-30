@@ -38,7 +38,7 @@ h4
 }
 .header
 {
-    z-index: 200;
+    z-index: 10001;
 }
 .header-logo
 {
@@ -51,6 +51,7 @@ h4
     font-size: 1.8rem;
     border: 0.1rem solid;
     border-radius: 0.5rem;
+    cursor: pointer;
 }
 .main-image
 {
@@ -109,7 +110,7 @@ h4
 .navigation-slider-open , .navigation-slider-close
 {
     position: fixed;
-    z-index: 1;
+    z-index: 10000;
     width: 200px;
     height: 235px;
     top: 40px;
