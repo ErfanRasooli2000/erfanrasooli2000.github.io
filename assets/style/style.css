@@ -264,6 +264,8 @@ h4
 }
 .about-me-content p
 {
+    background-color: white;
+    z-index: 10;
     line-height: 26px;
     letter-spacing: 0.5px;
     text-align: justify;
@@ -294,50 +296,6 @@ h4
     position: absolute;
     max-width: 750px;
     top: 100px;
-}
-.skills-header h4
-{
-    text-align: left;
-    color: white;
-}
-@media all and (min-width: 768px) and (max-width: 991px)
-{
-    .service
-    {
-        height: 420px;
-    }
-    .skills-header
-    {
-        width: 750px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-}
-@media all and (min-width: 992px) and (max-width: 1199px)
-{
-    .skills
-    {
-        height: 622px;
-    }
-    .skills-header
-    {
-        width: 485px;
-        padding: 0 15px;
-        margin-left: calc(100% - 485px);
-    }
-}
-@media all and (min-width: 1200px)
-{
-    .skills
-    {
-        height: 622px;
-    }
-    .skills-header
-    {
-        width: 585px;
-        padding: 0 15px;
-        margin-left: calc(100% - 585px);
-    }
 }
 .skills-header h6
 {
@@ -618,7 +576,7 @@ h4
         border: 5px solid #818181;
     }
     .experiance-circle-gray { right: -27px; }
-    .experiance-circle-blue { left: -21px; }
+    .experiance-circle-blue { left: -21px; border: 5px solid #164E71;}
     .left-exp .experiance-content:after
     {
         position: absolute;
@@ -671,45 +629,6 @@ h4
     width: 300vw;
 
     transition: 500ms all ease-in;
-}
-@media all and (max-width: 767px)
-{
-    .clients-all
-    {
-        width: 300vw;
-        margin-left: 0;
-    }
-    .client-item
-    {
-        max-width: 768px;
-        margin: 75px 10px 10px 10px;
-    }
-}
-@media all and (min-width: 768px) and (max-width: 991px)
-{
-    .clients-all
-    {
-        width: 300vw;
-        margin-left: 0;
-    }
-    .client-item
-    {
-        max-width: 768px;
-        margin: 75px auto 10px auto;
-    }
-}
-@media all and (min-width: 992px)
-{
-    .clients-all
-    {
-        width: 150vw;
-        margin-left: 0;
-    }
-    .client-item
-    {
-        max-width: 560px;
-        margin: 75px 10px 10px 10px;
-    }
 }
 .client-image
 {
