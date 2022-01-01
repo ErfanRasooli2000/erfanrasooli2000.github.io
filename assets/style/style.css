@@ -530,7 +530,7 @@ h4
 .my-experiance
 {
     padding: 100px 0;
-    background-image: url("../images/experience-bg.jpg");
+    background-image: url("../images/experience-bg.webp");
     background-position: center;
 }
 .experiance
@@ -775,7 +775,7 @@ h4
     margin: 0;
     bottom: 0;
     padding: 100px 0;
-    background-image: url("../images/contact.jpg");
+    background-image: url("../images/contact.webp");
     background-position: center;
 }
 .footer h4
