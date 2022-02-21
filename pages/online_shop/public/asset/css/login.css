@@ -1,0 +1,114 @@
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: #c45500;
+}
+.main-title
+{
+    text-align: center;
+    font-weight: 600;
+    font-size: 32px;
+}
+.box
+{
+    border: 1px #ddd solid;
+    padding: 20px 26px;
+}
+.error-alert
+{
+    color: red;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.title-header
+{
+    font-weight: 600;
+    font-size: 32px;
+    color: #111;
+    padding-bottom: 4px;
+    margin-bottom: 10px;
+}
+.footer
+{
+    list-style-type: none;
+}
+.footer a
+{
+    font-size: 12px;
+    font-weight: 700;
+}
+.footer li
+{
+    padding: 0;
+    margin: 0 30px;
+}
+.footer-bottom
+{
+    font-size: 14px;
+}
+.input-title{
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0 0 2px 2px;
+}
+form input
+{
+    width: 100%;
+    height: 31px;
+    padding: 3px 7px;
+    border: 1px solid #a6a6a6;
+    border-top-color: #949494;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(255,255,255,.5),0 1px 0 rgba(0,0,0,.07) inset;
+    outline: 0;
+    margin-bottom: 10px;
+    color: #111;
+    font-size: 16px;
+}
+.signin_btn
+{
+    background: linear-gradient(to bottom,#f7dfa5,#f0c14b);
+    height: 34px;
+    border-radius: 2px;
+}
+.agrement
+{
+    margin-top: 18px;
+    font-size: 13px;
+}
+.forgot-password
+{
+    font-size: 14px;
+}
+.new-to
+{
+    position: absolute;
+    display: inline-block;
+    background-color: white;
+    margin: 0;
+    padding: 0 10px;
+    white-space: nowrap;
+    font-size: 13px;
+    color: #6b7280;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+.new-account
+{
+    display: inline-block;
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #111;
+    padding: 5px 11px;
+    box-shadow: 0 1px 0 rgba(255,255,255,.6) inset;
+    border-radius: 2px;
+    border: 1px solid #111;
+    background: linear-gradient(to bottom,#f7f8fa,#e7e9ec);
+}
